@@ -1,3 +1,5 @@
+'use client';
+
 import { AiFillCloseCircle } from "react-icons/ai";
 
 type ModalProps = {
