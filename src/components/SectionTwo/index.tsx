@@ -13,7 +13,7 @@ export function SectionTwo() {
   });
 
   const defaultOptions = {
-    loop: false,
+    loop: true,
     autoplay: true,
     animationData: animationData,
     rendererSettings: {
@@ -25,7 +25,8 @@ export function SectionTwo() {
   return (
     <>
       <main className="flex flex-col max-w-screen-lg m-auto ">
-        <section className="flex w-full space-x-4 ">
+        <section className="flex flex-col lg:flex-row w-full space-x-4 ">
+          <div className="hidden">
           <Lottie
             options={defaultOptions}
             height={658}
@@ -34,17 +35,27 @@ export function SectionTwo() {
             isPaused={animationState.isPaused}
          
           />
+          </div>
 
-          <article className="flex flex-col">
-            <span className="text-red-700 block text-4xl font-bold leading-10">
+          <Lottie
+            options={defaultOptions}
+            height={390}
+            width={390}
+            isStopped={animationState.isStopped}
+            isPaused={animationState.isPaused}
+         
+          />
+
+          <article className="flex  flex-col justify-center text-center lg:text-start px-2 lg:p-0">
+            <span className="text-red-700 flex justify-center  lg:block text-4xl mt-10 lg:mt-0 font-bold leading-10">
               Vantagens de ser clíente 33Doctor
             </span>
           
             <img className="w-[71px] h-[62px] self-end" src="/71x62.png" />
 
-            <section className="flex flex-col space-y-4 mt-10">
+            <section className="flex flex-col space-y-10 lg:space-y-4 mt-10">
               <div className="flex  items-center space-x-4">
-              <BsCheckLg className="text-red-700" size='30' />
+              <BsCheckLg className="text-red-700 hidden lg:block" size='30' />
                 <div className="flex flex-col space-y-2">
                   <span className=" text-red-700 text-lg font-bold leading-none tracking-tight">
                   Convênio médico sem mensalidade
@@ -53,10 +64,11 @@ export function SectionTwo() {
                   O Usuário só paga quando for utilizar algum serviço.
                   </span>
                 </div>
+                
               </div>
 
-              <div className="flex  items-center space-x-4">
-                <BsCheckLg className="text-red-700" size='30' />
+              <div className="flex  items-center lg:space-x-4">
+                <BsCheckLg className="text-red-700 hidden lg:block" size='30' />
                 <div className="flex flex-col space-y-2">
                   <span className=" text-red-700 text-lg font-bold leading-none tracking-tight">
                   Foco em qualidade de serviços e atendimento 
@@ -67,8 +79,8 @@ export function SectionTwo() {
                 </div>
               </div>
 
-              <div className="flex  items-center space-x-4">
-                <BsCheckLg className="text-red-700" size='30' />
+              <div className="flex  items-center lg:space-x-4">
+                <BsCheckLg className="text-red-700 hidden lg:block" size='30' />
                 <div className="flex flex-col space-y-2">
                   <span className=" text-red-700 text-lg font-bold leading-none tracking-tight">
                   Ampla rede de serviços médicos
@@ -79,8 +91,8 @@ export function SectionTwo() {
                 </div>
               </div>
 
-              <div className="flex  items-center space-x-4">
-                <BsCheckLg className="text-red-700" size='30' />
+              <div className="flex  items-center lg:space-x-4">
+                <BsCheckLg className="text-red-700 hidden lg:block" size='30' />
                 <div className="flex flex-col space-y-2">
                   <span className=" text-red-700 text-lg font-bold leading-none tracking-tight">
                   Centralização do Atendimento via telefone, whatsapp e na central
@@ -91,8 +103,8 @@ export function SectionTwo() {
                 </div>
               </div>
 
-              <div className="flex  items-center space-x-4">
-                <BsCheckLg className="text-red-700" size='30' />
+              <div className="flex  items-center lg:space-x-4">
+                <BsCheckLg className="text-red-700 hidden lg:block" size='30' />
                 <div className="flex flex-col space-y-2">
                   <span className=" text-red-700 text-lg font-bold leading-none tracking-tight">
                   Pacotes com telemedicina e tele psicologia
@@ -103,8 +115,8 @@ export function SectionTwo() {
                 </div>
               </div>
 
-              <div className="flex  items-center space-x-4">
-                <BsCheckLg className="text-red-700" size='30' />
+              <div className="flex  items-center lg:space-x-4">
+                <BsCheckLg className="text-red-700 hidden lg:block" size='30' />
                 <div className="flex flex-col space-y-2">
                   <span className=" text-red-700 text-lg font-bold leading-none tracking-tight">
                   Fornecedores da area de exames de laboratório
@@ -115,8 +127,8 @@ export function SectionTwo() {
                 </div>
               </div>
 
-              <div className="flex  items-center space-x-4">
-                <BsCheckLg className="text-red-700" size='30' />
+              <div className="flex  items-center lg:space-x-4">
+                <BsCheckLg className="text-red-700 hidden lg:block" size='30' />
                 <div className="flex flex-col space-y-2">
                   <span className=" text-red-700 text-lg font-bold leading-none tracking-tight">
                   Atendimento e cobrança sob demanda. 
@@ -127,8 +139,8 @@ export function SectionTwo() {
                 </div>
               </div>
 
-              <div className="flex  items-center space-x-4">
-                <BsCheckLg className="text-red-700" size='30' />
+              <div className="flex  items-center lg:space-x-4">
+                <BsCheckLg className="text-red-700 hidden lg:block" size='30' />
                 <div className="flex flex-col space-y-2">
                   <span className=" text-red-700 text-lg font-bold leading-none tracking-tight">
                   Planos inteligentes com foco em prevenção e proteção da vida do usuário

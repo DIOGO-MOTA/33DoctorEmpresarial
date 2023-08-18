@@ -1,3 +1,4 @@
+import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { SectionFour } from '@/components/SectionFour'
 import { SectionOne } from '@/components/SectionOne'
@@ -12,6 +13,7 @@ export default function Home() {
      <SectionTwo />
      <SectionThree />
      <SectionFour />
+     <Footer />
    </>
   )
 }

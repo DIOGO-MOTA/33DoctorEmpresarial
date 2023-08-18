@@ -11,7 +11,7 @@ export function SectionThree() {
         </span>
       </div>
       <img className="w-[71px] h-[62px] self-end" src="/71x62.png" />
-      <section className="grid gap-6 p-2 grid-cols-2 lg:grid-cols-4 w-full grid-wrap ">
+      <section className="grid gap-6 p-2 grid-cols-1 lg:grid-cols-4 w-full grid-wrap ">
         <article className="flex flex-col p-4  justify-center items-center gap-px  bg-white rounded-lg hover:scale-110  drop-shadow-[0_10px_15px_rgba(0,0,0,0.25)] ">
           <img
             className="w-[43px] h-[62px]  mb-2"
@@ -63,7 +63,7 @@ export function SectionThree() {
             className="w-[31px] h-[62px]  mb-2 "
             src="/facilidade.png"
           />
-          <span className="text-center text-red-700 text-lg font-bold leading-none tracking-tight">
+          <span className="text-center text-red-700 text-lg font-bold leading-none tracking-tight"> 
           Facilidade
           </span>
 
