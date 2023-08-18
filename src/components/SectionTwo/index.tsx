@@ -153,7 +153,7 @@ export function SectionTwo() {
             </section>
           </article>
         </section>
-        <img className="w-[312px] h-[229px] -ml-[25rem]" src="/512x429.png" />
+        <img className="w-[312px] h-[229px] -ml-[25rem] hidden lg:flex" src="/512x429.png" />
       </main>
     </>
   );

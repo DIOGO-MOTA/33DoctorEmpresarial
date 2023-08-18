@@ -3,7 +3,7 @@
 export function SectionThree() {
   return (
     <>
-        <main className="flex flex-col max-w-screen-lg m-auto my-4 ">
+        <main className="flex flex-col max-w-screen-lg m-auto my-14 lg:my-4 ">
       <div className="text-center">
         <span className="text-red-700 text-5xl font-bold leading-10">
           Facilidades,{" "}
