@@ -33,7 +33,7 @@ export function Modal33Essencial({
                   </div>
 
                   {/*body*/}
-                  <div className="relative  py-2 flex  flex-col md:flex-row overflow-hidden  md:space-x-4 justify-start ">
+                  <div className="relative  py-2 flex  flex-col md:flex-row overflow-y-scroll scrollbar-thin md:overflow-hidden md:space-x-4 justify-start ">
                     <div className="flex flex-col space-y-4">
                       <span className="text-red-700 self-center text-lg text-center font-bold leading-normal tracking-tight">
                         33ESSENCIAL CONVÊNIO + TELEMEDICINA - Especialidades A
